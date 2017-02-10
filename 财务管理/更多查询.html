@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/更多查询/更多查询.css"/>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper-3.4.0.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <span></span>
+            <h1>绑定支付宝账户</h1>
+            <span class="span"><img src="img/绑定支付宝账号/h_03.jpg" alt=""/></span>
+        </header>
+        <section>
+            <div class="daohang">
+               <ul>
+                   <li>
+                       <a href="">1</a>
+                       <ul>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="">2</a>
+                       <ul>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="">3</a>
+                       <ul>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="">4</a>
+                       <ul>
+                           <p></p>
+                           <p></p>
+                           <p></p>
+                           <p></p>
+                          <!-- <li></li>
+                           <li></li>
+                           <li></li>-->
+                       </ul>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="main">
+                <div class="active one">
+                   <div class="bu">
+                       <p><span>销售退款<b>-230.00元</b></span><span>订单编号<b>DKFA234567345</b></span></p>
+                       <p><span>交易时间<b>2014-06-16 13:44</b></span><span>已完成</span></p>
+                   </div>
+
+                    <div class="bu">
+                        <p><span>销售收入<b>+230.00元</b></span><span>订单编号<b>DKFA234567345</b></span></p>
+                        <p><span>交易时间<b>2014-06-16 13:44</b></span><span>已完成</span></p>
+                    </div>
+                    <div class="bu">
+                        <p><span>提现金额<b>+230.00元</b></span><span>订单编号<b>DKFA234567345</b></span></p>
+                        <p><span>交易时间<b>2014-06-16 13:44</b></span><span>已完成</span></p>
+                    </div>
+                    <div class="bu">
+                        <p><span>提现金额<b>+230.00元</b></span><span>订单编号<b>DKFA234567345</b></span></p>
+                        <p><span>交易时间<b>2014-06-16 13:44</b></span><span>已完成</span></p>
+                    </div>
+                    <div class="bu">
+                        <p><span>销售收入<b>+230.00元</b></span><span>订单编号<b>DKFA234567345</b></span></p>
+                        <p><span>交易时间<b>2014-06-16 13:44</b></span><span>已完成</span></p>
+                    </div>
+
+                </div>
+                <div class="two">2</div>
+                <div class="three">3</div>
+                <div class="four">4</div>
+            </div>
+
+        </section>
+          <footer>
+
+          </footer>
+    </div>
+</body>
+<script>
+    $("li").on("click",function(){
+        var index=$(this).index();
+        //console.log(index);
+        $(".main>div").hide().eq(index).show();
+
+    })
+</script>
+</html>

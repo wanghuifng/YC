@@ -1,0 +1,156 @@
+@import url("reset (1).css");
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 3.8rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #dddddd ;
+}
+.wrap header span {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.wrap header span:nth-child(1) {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: none;
+  border: 1px solid #000;
+  transform: rotate(45deg);
+  border-top: none;
+  border-right: none;
+  position: relative;
+  left: 10px;
+  top: 14px;
+}
+.wrap header .span {
+  display: inline-block;
+  text-align: center;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+.wrap header .span img {
+  width: 1.8rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+  padding-top: 1rem;
+}
+.wrap header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  color: #3b3b3b;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap section .daohang {
+  width: 100%;
+  height: 3.4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.4rem;
+  border-bottom: 0.6rem solid #f2f2f2;
+}
+.wrap section .daohang ul {
+  -webkit-box-flex: 1;
+  text-align: center;
+  /* span {
+          display: inline-block;
+          .full(0.8rem, 0.9rem, none);
+          border: 1px solid #000;
+          transform: rotate(45deg);
+          border-top: none;
+          border-left: none;
+          position: relative;
+          left: 10px;
+          top: 0px;
+        }*/
+}
+.wrap section .daohang ul li ul {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: null;
+}
+.wrap section .daohang ul li ul li {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: null;
+}
+.wrap section .daohang ul li ul p {
+  width: 100%;
+  height: 1rem;
+}
+.wrap section .main {
+  -webkit-box-flex: 1;
+}
+.wrap section .main .one,
+.wrap section .main .two,
+.wrap section .main .three,
+.wrap section .main .four {
+  background: #f2f2f2;
+  display: none;
+}
+.wrap section .main .active {
+  display: block;
+}
+.wrap section .main .bu {
+  width: 100%;
+  height: 4.6rem;
+  background: #ffffff;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  border-bottom: 0.6rem solid #f2f2f2;
+}
+.wrap section .main .bu p {
+  width: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  height: 1.8rem;
+}
+.wrap section .main .bu p:nth-child(1) span {
+  display: block;
+}
+.wrap section .main .bu p:nth-child(1) span:nth-child(1) {
+  width: 10rem;
+}
+.wrap section .main .bu p:nth-child(1) span:nth-child(2) {
+  -webkit-box-flex: 1;
+  text-align: right;
+}
+.wrap section .main .bu p:nth-child(2) span {
+  display: block;
+}
+.wrap section .main .bu p:nth-child(2) span:nth-child(1) {
+  -webkit-box-flex: 1;
+}
+.wrap section .main .bu p:nth-child(2) span:nth-child(2) {
+  width: 10rem;
+  text-align: right;
+}

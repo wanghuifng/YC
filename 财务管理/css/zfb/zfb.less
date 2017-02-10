@@ -1,0 +1,119 @@
+@import url("reset (1).css");
+.full(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+.box(@ver:vertical){
+  display: -webkit-box;
+  -webkit-box-orient: @ver;
+}
+body,html{
+  .full(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+.wrap{
+    .full(100%,100%,none);
+    .box(@ver: vertical);
+    header{
+          .full(100%,3.8rem,#f7f7f7);
+          .box(@ver: horizontal);
+           border-bottom:1px solid #dddddd ;
+          span{
+             .full(2rem,auto,none);
+             &:nth-child(1){
+                  display: inline-block;
+                  .full(0.8rem,0.8rem,none);
+                  border:1px solid #000;
+                  transform:rotate(45deg);
+                  border-top: none;
+                  border-right:none;
+                  position: relative;
+                  left:10px;
+                  top:14px;
+             }
+          }
+      .span{
+         display: inline-block;
+         text-align: center;
+        //.full(2rem,3.8,none);
+        padding-right: 0.5rem;
+        box-sizing: border-box;
+        img{
+          .full(1.8rem,auto,none);
+           vertical-align: middle;
+           padding-top: 1rem;
+        }
+      }
+          h1{
+            -webkit-box-flex:1;
+            text-align: center;
+            font-size:1.6rem;
+            line-height:3.8rem;
+            color: #3b3b3b;
+          }
+    }
+    section{
+        .full(100%,7rem,none);
+         padding-left: 1rem;
+         box-sizing: border-box;
+        .zhanghao{
+          .full(100%,3.5rem,none);
+          .box(@ver:horizontal);
+           border-bottom:1px solid #ececec ;
+           line-height: 3.5rem;
+           font-size:1.4rem;
+           color: #aaaaaa;
+        }
+      .yanzhengma{
+        .full(100%,3.4rem,none);
+        .box(@ver:horizontal);
+         line-height: 3.4rem;
+         border-bottom:1px solid #e7e7e7 ;
+        font-size:1.4rem;
+        color: #aaaaaa;
+        p{
+          -webkit-box-flex: 1;
+        }
+        a{
+          display:inline-block;
+          .full(6.5rem,auto,none);
+          font-size:1.4rem;
+          color: #686868;
+
+        }
+      }
+    }
+  footer{
+    -webkit-box-flex: 1;
+    .full(100%,auto,#f2f2f2);
+     padding: 1rem;
+     box-sizing: border-box;
+    p{
+      .full(100%,3.2rem,none);
+       line-height: 3.2rem;
+       color: #6b6b6b;
+
+  }
+    .tijiao{
+        padding: 1rem;
+        box-sizing: border-box;
+        background: #ff7f1c;
+         border: none;
+         border-radius: 5px;
+         text-align: center;
+        button{
+           border: none;
+           font-size:1.4rem;
+           color: #fdf8f4;
+           text-align: center;
+           background: #ff7f1c;
+
+        }
+    }
+
+
+  }
+}
