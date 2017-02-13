@@ -1,0 +1,352 @@
+@import url("reset.css");
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: null;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+}
+.warp header .head {
+  width: 100%;
+  height: 4.2rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #e4e4e4;
+}
+.warp header .head .left {
+  width: 4.2rem;
+  height: 4.2rem;
+  background: null;
+  text-align: center;
+  line-height: 4.2rem;
+}
+.warp header .head .left img {
+  width: 1.4rem;
+  height: auto;
+  background: null;
+}
+.warp header .head h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+}
+.warp header .head .right {
+  width: 4.2rem;
+  height: 4.2rem;
+  background: null;
+}
+.warp header .msg {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e0e0e0;
+}
+.warp header .msg .left {
+  -webkit-box-flex: 1;
+}
+.warp header .msg .left dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp header .msg .left dl dt {
+  margin-right: 1rem;
+}
+.warp header .msg .left dl dt img {
+  width: 50px;
+  height: auto;
+  background: null;
+}
+.warp header .msg .left dl dd {
+  padding-left: 1rem;
+  -webkit-box-flex: 1;
+  border-left: 1px solid #ebebeb;
+}
+.warp header .msg .left dl dd h3 {
+  font-size: 1.6rem;
+}
+.warp header .msg .left dl dd h3 span img {
+  width: auto;
+  height: 1.2rem;
+  background: null;
+}
+.warp header .msg .left dl dd p {
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+}
+.warp header .msg .left dl dd p span {
+  color: #ff3600;
+}
+.warp header .msg .right {
+  padding-top: 1.2rem;
+}
+.warp section {
+  background: #f2f2f2;
+  -webkit-box-flex: 1;
+  padding-top: 1rem;
+  overflow: auto;
+}
+.warp section::-webkit-scrollbar {
+  width: 0;
+}
+.warp section .start {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.warp section .start h2 {
+  font-size: 1.6rem;
+  color: #ff7814;
+  line-height: 3rem;
+  text-align: center;
+}
+.warp section .start span {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+.warp section .list {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+}
+.warp section .list dl {
+  width: 50%;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #f7f7f7;
+}
+.warp section .list dl dt {
+  line-height: 4rem;
+}
+.warp section .list dl dt img {
+  width: 20px;
+  height: auto;
+  background: null;
+}
+.warp section .list dl dd {
+  margin-left: 1rem;
+}
+.warp section .list dl dd h3 {
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+.warp section .list dl dd p {
+  line-height: 2rem;
+  font-size: 0.8rem;
+  color: #9b9b9b;
+}
+.warp section .news {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 0.3rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f1f1;
+}
+.warp section .news .left {
+  -webkit-box-flex: 1;
+}
+.warp section .news .left dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .news .left dl dt img {
+  width: 17px;
+  height: auto;
+  background: null;
+}
+.warp section .news .left dl dd {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+}
+.warp section .news .right img {
+  width: 7px;
+  height: auto;
+  background: null;
+}
+.warp section .xinxi {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0.8rem;
+  box-sizing: border-box;
+}
+.warp section .xinxi .left {
+  -webkit-box-flex: 1;
+}
+.warp section .xinxi .left dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .xinxi .left dl dt img {
+  width: 3.5rem;
+  height: auto;
+  background: null;
+}
+.warp section .xinxi .left dl dd {
+  margin-left: 1rem;
+}
+.warp section .xinxi .left dl dd h3 {
+  font-size: 1.4rem;
+}
+.warp section .xinxi .left dl dd p {
+  color: #ababab;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.warp section .xinxi .right {
+  color: #ababab;
+  padding-top: 0.8rem;
+}
+.warp footer {
+  width: 100%;
+  height: auto;
+  background: null;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0.1rem 0.3rem;
+  box-sizing: border-box;
+  border-top: 1px solid #ededed;
+}
+.warp footer dl {
+  width: 20%;
+  height: auto;
+  background: none;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.warp footer dl img {
+  width: 2.2rem;
+  height: 2.2rem;
+  background: none;
+}
+.warp footer dl dd {
+  padding-top: 0.4rem;
+}
+.warp footer dl .add {
+  width: 4.5rem;
+  height: auto;
+  background: none;
+}
+.revise {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.revise header {
+  width: 100%;
+  height: 3.8rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #dddddd ;
+}
+.revise header span {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.revise header span:nth-child(1) {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: none;
+  border: 0.2rem solid #bababa;
+  transform: rotate(45deg);
+  border-top: none;
+  border-right: none;
+  position: relative;
+  left: 1rem;
+  top: 1.4rem;
+}
+.revise header .span {
+  display: inline-block;
+  text-align: center;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+.revise header .span img {
+  width: 2rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+  padding-top: 1.2rem;
+  padding-right: 0.3rem;
+  box-sizing: border-box;
+}
+.revise header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  color: #3b3b3b;
+}
+.revise section {
+  width: 100%;
+  height: auto;
+  background: #f2f2f2;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.revise section ul {
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+}
+.revise section ul li {
+  width: 100%;
+  height: 25%;
+  background: none;
+  line-height: 2rem;
+}
+.revise section ul li span {
+  color: #a6a6a6;
+}
+.revise section button {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: block;
+  width: 100%;
+  line-height: 3.2rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  color: #fdf8f4;
+  text-align: center;
+  background: #fd7d1a;
+  font-size: 1.8rem;
+  letter-spacing: 0.4rem;
+}
