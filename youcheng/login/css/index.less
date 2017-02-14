@@ -1,0 +1,117 @@
+@import url(m_reset.css);
+
+html{
+    font-size: 62.5%;
+    //background: url(../img/1.jpg) no-repeat;
+}
+
+html,body,.wrap{
+    width: 100%;
+    height: 100%;
+}
+
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+
+.box(@ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+    
+}
+
+.wrap{
+    .box(vertical);
+    .full(100%,100%,none);
+    background: url(../img/1.jpg) ;
+    background-size: 100% 100%;
+
+    header{
+        .full(100%,20rem,none);
+        .box(vertical);
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        dl{
+            .full(10rem,14.2rem,none);
+            margin-bottom: -6rem;
+            dt{
+                text-align: center;
+                -webkit-box-align: center;
+                -webkit-box-pack: center;
+                img{
+                    .full(100%,10rem,none);
+                }
+            }
+            dd{
+                    .full(100%,5.3rem,none);
+                    text-align: center;
+                    font-size: 2.2rem;
+            }
+        }
+    }
+    .phone,.pwd{
+        .full(100%,auto,none);
+        padding: 1rem;
+        .box;
+        span{
+            display: block;
+            .full(3.4rem,auto,none);
+            margin-right: 1rem;
+            img{
+                .full(3.4rem,auto,none);
+            }
+        }
+        .shu{
+            -webkit-box-flex: 1;
+            padding-top: 1rem;
+            input{
+                width: 100%;
+                font-size: 1.6rem;
+                outline-style: none ;
+                border-style: none ;  
+                text-shadow: none ;
+                background-color:transparent;
+                border-bottom: 0.2rem solid #ff7d1b;
+                padding-bottom: 0.4rem;
+            }
+        }
+        .paw{
+            background: url(../img/5.jpg) right no-repeat;
+            background-size: 2.5rem 1.5rem;
+        }
+      
+    }
+    .deng{
+        .full(100%,4rem,none);
+        padding: 0 1rem;
+        button{
+            .full(100%,4rem,#ff7d1b);
+            font-size: 1.8rem;
+            color: white;
+            border: 0;
+            outline-style: none ;
+            border-style: none ;  
+            text-shadow: none ;
+            letter-spacing:0.2rem;
+            border-radius: 0.5rem;
+        }
+    }
+    .a{   
+        span{
+                a{
+                    color:#5f86b1 ;
+                }
+                #o{
+                    float: left;
+                    padding-left: 1.5rem;
+                }
+                #n{
+                    float: right;
+                    padding-right: 1.5rem;
+                }   
+        }
+    }
+
+}

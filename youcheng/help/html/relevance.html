@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="../css/relevance.css"/>
+    	<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<title>关联文档</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<span></span>
+            	<h1>关联文档</h1>
+			</header>
+			<section>
+				<div class="one">
+		        	<input type="text" value="创意相框.stl"/>
+		        </div>
+		        <div class="two">
+		        	<input type="text" value="创意相框.stl"/>
+		        </div>
+			</section>
+			<footer>
+				<button>不关联文档</button>
+			</footer>
+		</div>
+		<script src="js/iscroll.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script>
+			 var swiper = new Swiper('.swiper-container', {
+				        pagination: '.swiper-pagination',
+				        slidesPerView:1,
+				        paginationClickable: true,
+				        spaceBetween: 10,
+				        freeMode: true,
+				        nextButton: '.swiper-button-next',
+    					prevButton: '.swiper-button-prev',
+    					loop:true,
+    					autoplay : 1000
+				    });	
+		</script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+@import url("m_reset.css");
+.whb(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+.box(@ver:vertical){
+  display: -webkit-box;
+  -webkit-box-orient: @ver;
+}
+body,html{
+  .whb(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+.revise{
+    .whb(100%,100%,#f2f2f2);
+    .box(@ver: vertical);
+    header{
+        .whb(100%,3.8rem,#f7f7f7);
+        .box(@ver: horizontal);
+        border-bottom:1px solid #dddddd ;
+        span{
+            .whb(2rem,auto,none);
+            &:nth-child(1){
+                display: inline-block;
+                .whb(0.8rem,0.8rem,none);
+                border:0.2rem solid #bababa;
+                transform:rotate(45deg);
+                border-top: none;
+                border-right:none;
+                position: relative;
+                left:1rem;
+                top:1.4rem;
+            }
+        }
+        .span{
+            display: inline-block;
+            text-align: center;
+            //.whb(2rem,3.8,none);
+            padding-right: 0.5rem;
+            box-sizing: border-box;
+            img{
+                .whb(2rem,auto,none);
+                vertical-align: middle;
+                padding-top: 1.2rem;
+                padding-right: 0.3rem;
+                box-sizing: border-box;
+            }
+        }
+        h1{
+            -webkit-box-flex:1;
+            text-align: center;
+            font-size:1.6rem;
+            line-height:3.8rem;
+            color: #3b3b3b;
+        }
+    }
+    footer{
+        .whb(100%,auto,none);
+        padding: 1rem;
+        box-sizing: border-box;
+        button{
+            width: 100%;
+            line-height: 3.2rem;
+            box-sizing: border-box;
+            //background: #ccccc;
+            border: none;
+            border-radius: 5px;
+            border: none;
+            font-size:1.4rem;
+            color: #fdf8f4;
+            text-align: center;
+            background: #fd7d1a;
+            font-size: 1.8rem;
+            letter-spacing:0.4rem;
+          }
+    }
+    section{
+        .whb(100%,auto,#f2f2f2);
+        .box;
+        ul{
+            .whb(100%,auto,#f7f7f7);
+            padding: 0 1rem;
+            font-size: 1.4rem;
+            li{
+                .whb(100%,25%,none);
+                line-height: 2rem;
+                span{
+                    color: #a6a6a6;
+    //              .aa{
+    //                  .whb(0.5rem,0.5rem,none);
+    //                  display：inline-block;
+    //                  border:1px solid #999;
+    //                  margin-left:0.5rem;
+    //                  transform:rotateZ(45deg) translate(-2px);rotate//旋转   translate//位移
+    //                  border-left:none;
+    //                  border-top:none;
+    //              }
+                }
+            }
+        }
+    }
+}

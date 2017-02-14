@@ -1,0 +1,91 @@
+@import url("m_reset.css");
+.full(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+.box(@ver:vertical){
+  display: -webkit-box;
+  -webkit-box-orient: @ver;
+}
+body,html{
+  .full(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+.revise{
+    .full(100%,100%,#f2f2f2);
+    .box(@ver: vertical);
+    header{
+        .full(100%,3.8rem,#f7f7f7);
+        .box(@ver: horizontal);
+        border-bottom:1px solid #dddddd ;
+        span{
+            .full(2rem,auto,none);
+            &:nth-child(1){
+                display: inline-block;
+                .full(0.8rem,0.8rem,none);
+                border:0.2rem solid #bababa;
+                transform:rotate(45deg);
+                border-top: none;
+                border-right:none;
+                position: relative;
+                left:1rem;
+                top:1.4rem;
+            }
+        }
+        .span{
+            display: inline-block;
+            text-align: center;
+            //.full(2rem,3.8,none);
+            padding-right: 0.5rem;
+            box-sizing: border-box;
+            img{
+                .full(2rem,auto,none);
+                vertical-align: middle;
+                padding-top: 1.2rem;
+                padding-right: 0.3rem;
+                box-sizing: border-box;
+            }
+        }
+        h1{
+            -webkit-box-flex:1;
+            text-align: center;
+            font-size:1.6rem;
+            line-height:3.8rem;
+            color: #3b3b3b;
+        }
+    }
+        
+    section{
+        .full(100%,auto,#f2f2f2);
+        .box;
+        ul{
+            .full(100%,auto,#f7f7f7);
+            padding: 0 1rem;
+            font-size: 1.4rem;
+            li{
+                .full(100%,25%,none);
+                line-height: 2rem;
+                span{
+                    color: #a6a6a6;
+    //              .aa{
+    //                  .full(0.5rem,0.5rem,none);
+    //                  display：inline-block;
+    //                  border:1px solid #999;
+    //                  margin-left:0.5rem;
+    //                  transform:rotateZ(45deg) translate(-2px);rotate//旋转   translate//位移
+    //                  border-left:none;
+    //                  border-top:none;
+    //              }
+                }
+            }
+        }
+        button{
+            .full(100%,auto,none);
+            display: block;
+            padding: 0 1rem;
+        }
+    }
+}
