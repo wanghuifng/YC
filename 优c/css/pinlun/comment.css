@@ -1,0 +1,224 @@
+@import url('reset.css');
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 3.5rem;
+  text-align: center;
+}
+header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+}
+header .left {
+  width: 1.2rem;
+  height: 3.5rem;
+  background: null;
+  margin-left: 1rem;
+}
+header .left img {
+  width: 0.8rem;
+  height: auto;
+  background: null;
+}
+header .right {
+  width: 1.7rem;
+  height: 3.5rem;
+  background: null;
+  margin-right: 1rem;
+}
+header .right img {
+  width: 1.6rem;
+  height: auto;
+  background: null;
+}
+.classify {
+  width: 100%;
+  height: 3.4rem;
+  background: null;
+}
+.classify ul {
+  width: 100%;
+  height: 2.5rem;
+  background: null;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-top: 0.5rem;
+}
+.classify ul li {
+  -webkit-box-flex: 1;
+  color: #333333;
+  border-right: 1px solid #cccccc;
+}
+.classify ul li img {
+  width: 1rem;
+  height: auto;
+  background: null;
+  margin-left: 0.5rem;
+}
+.classify ul .no {
+  color: #ff7d1b;
+}
+.classify ul .timer {
+  border-right: none;
+  position: relative;
+}
+.classify ul .timer ul {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  z-index: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: absolute;
+  display: none;
+}
+.classify ul .timer ul li {
+  height: 2rem;
+  border-right: none;
+  line-height: 2.5rem;
+}
+section {
+  -webkit-box-flex: 1;
+  background: #f3f3f3;
+  position: relative;
+  overflow: auto;
+}
+section::-webkit-scrollbar {
+  width: 0;
+}
+section .content {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 0.5rem;
+}
+section .content h2 {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #262626;
+  padding-left: 1rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+section .content ul {
+  width: 100%;
+  height: 5.6rem;
+  background: null;
+  margin-top: 0.4rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+section .content ul li {
+  width: 100%;
+  height: 1.4rem;
+  background: null;
+  line-height: 1.4rem;
+}
+section .content ul li .span_img {
+  float: right;
+}
+section .content ul li .span_img img {
+  width: 1.2rem;
+  height: auto;
+  background: null;
+}
+section .content ul li span b {
+  margin-left: 0.3rem;
+}
+section .content p {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+section .content .content_btn {
+  width: 100%;
+  height: 2.6rem;
+  background: null;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-top: 1px solid #f3f3f3;
+  margin-top: 0.4rem;
+}
+section .content .content_btn div {
+  width: 5rem;
+  height: 2rem;
+  background: null;
+  border: 1px solid #ff7d1b;
+  text-align: center;
+  line-height: 2rem;
+  color: #ff7d1b;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+  float: right;
+}
+section .content .add {
+  color: #747474;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin: 0.3rem 0;
+}
+section .content .add span {
+  color: #262626;
+}
+section .content .reply {
+  color: #ff7d1b;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+section .content .reply span {
+  color: #262626;
+}
+section .section_s {
+  width: 100%;
+  height: 100%;
+  background: #cccccc;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.location {
+  width: 100%;
+  height: 100%;
+  background: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  display: none;
+}
+.keyboard {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: none;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 1;
+}
+.keyboard img {
+  width: 100%;
+  height: auto;
+  background: null;
+}

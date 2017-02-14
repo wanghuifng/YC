@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/pinlun/comment.css"/>
+	<script type="text/javascript">
+		
+		document.addEventListener('plusready', function(){
+			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+			
+		});
+		 
+	</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="left" ui-sref="plfh"><img src="img/pinlun/p1.png"/></div>
+				<h1>评论管理</h1>
+				<div class="right"><img src="img/pinlun/p2.png"/></div>
+			</header>
+			<div class="classify">
+				<ul>
+					<li class="no">全部类型<img src="img/pinlun/p4.png"/></li>
+					<li>评分等级<img src="img/pinlun/p3.png"/></li>
+					<li  class="timer">
+						评论时间<img src="img/pinlun/p3.png"/>
+						<ul>
+							<li>1个月以内</li>
+							<li>1-2个月</li>
+							<li>2-3个月</li>
+							<li>3个月以上</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<section>
+				<div class="content">
+					<h2>3D打印的陶瓷</h2>
+					<ul class="content_top">
+						<li>
+							订单编号：DSFSDO12389143
+							<span class="span_img">
+								<img src="img/pinlun/p5.png"/><img src="img/pinlun/p5.png"/>
+								<img src="img/pinlun/p5.png"/><img src="img/pinlun/p5.png"/><img src="img/pinlun/p6.png"/>
+							</span>
+						</li>
+						<li>用户ID：<span>顺风耳</span></li>
+						<li>交易时间：<span>2016-06-01<b>12:14</b></span></li>
+						<li>交易时间：<span>2016-06-01<b>12:14</b></span></li>
+					</ul>
+					<p>
+						Formlabs发布该产品的原因很简单、直接：目前低端3D打印机都无法满足职业设计师的质量标准。Formlabs发布该产品的原因很简单、直接：目前低端3D打印机都无法满足职业设计师的质量标准。
+					</p>
+					<div class="content_btn">
+						<div>回复评论</div>
+					</div>
+				</div>
+				<div class="content">
+					<h2>3D打印的陶瓷</h2>
+					<ul class="content_top">
+						<li>
+							订单编号：DSFSDO12389143
+							<span class="span_img">
+								<img src="img/pinlun/p5.png"/><img src="img/pinlun/p5.png"/>
+								<img src="img/pinlun/p5.png"/><img src="img/pinlun/p5.png"/><img src="img/pinlun/p6.png"/>
+							</span>
+						</li>
+						<li>用户ID：<span>顺风耳</span></li>
+						<li>交易时间：<span>2016-06-01<b>12:14</b></span></li>
+						<li>交易时间：<span>2016-06-01<b>12:14</b></span></li>
+					</ul>
+					<p>
+						Formlabs发布该产品的原因很简单、直接：目前低端3D打印机都无法满足职业设计师的质量标准。Formlabs发布该产品的原因很简单、直接：目前低端3D打印机都无法满足职业设计师的质量标准。
+					</p>
+					<div class="add">
+						<b>追加评论：</b><span>Formlabs发布该产品的原因很简单、直接：目前低端3D打印机都无法满足职业设计师的质量标准。</span>
+					</div>
+					<div class="reply">
+						<b>您的回复：</b><span>Formlabs发布该产品的原因很简单、直接：目前低端3D打印机都无法满足职业设计师的质量标准。</span>
+					</div>
+				</div>
+				<div class="section_s"></div>
+			</section>
+			<div class="location"></div>
+			<div class="keyboard"><img src="img/pinlun/p7_02.png"/></div>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".reply>b").on('click',function(){
+				$(".location").show();
+				$(".keyboard").show();
+				$(".keyboard").on('click',function(){
+					$(".location").hide();
+					$(".keyboard").hide();
+				})
+			})
+			$(".timer").on("click",function(){
+				$(".timer>ul").show();
+				$(".section_s").show();
+				$(".section_s").on('click',function(){
+					$(".timer>ul").hide();
+					$(".section_s").hide();
+				})
+			})
+		})
+	</script>
+</html>
